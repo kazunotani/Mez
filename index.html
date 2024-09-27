@@ -37,12 +37,12 @@
             window.setTimeout(() => {
                 DoDo();
             }, a * 1000 * 60);
+            
+        }
+        function DoDo(){
             window.setInterval(() => {
                 flag = 0;
             }, 60000);
-        }
-        function DoDo(){
-
             window.setInterval(() => {
                 if(flag == 0){
                         music.play();
