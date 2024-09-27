@@ -3,15 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document</title><style>
+        .example3{
+            /*コレ*/border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 200px;
+            background: #6fa1ff;
+            color: #FFF;
+            text-decoration: none;
+            text-align: center;
+            margin: 10px 0;
+        }
+        </style>
+        
 </head>
 <body>
-    <button onclick="Do();">WAKEUP!</button>
-    <button onclick="Sn();">STOP</button>
+    <a href="#" class="example3" onclick="Do();">WAKEUP!</a>
+    <a href="#" class="example3" onclick="Sn();">STOP</a>
     <input type="number" id = "mi">
 
- 
-    <script>
+ <script>
+
         var music = new Audio("目覚まし時計のアラーム.mp3");
         let a;
         let flag = 0;
