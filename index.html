@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="Do();">WAKEUP!</button>
+    <button onclick="Sn();">STOP</button>
+    <input type="number" id = "mi">
+
+ 
+    <script>
+        var music = new Audio("目覚まし時計のアラーム.mp3");
+        let a;
+        let flag = 0;
+        function Do(){
+            a = document.getEl
+            flag = 0;
+            document.getElementById("mi").value;
+            window.setTimeout(() => {
+                DoDo();
+            }, a * 1000 * 60);
+            window.setInterval(() => {
+                flag = 0;
+            }, 60000);
+        }
+        function DoDo(){
+
+            window.setInterval(() => {
+                if(flag == 0){
+                        music.play();
+                }
+            }, 6000);
+        }
+        function Sn(){
+             flag = 1;
+        }
+    </script>
+</body>
+</html>
